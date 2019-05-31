@@ -181,6 +181,7 @@
 		<dependency-check-maven.version>4.0.2</dependency-check-maven.version>
 		<puppycrawl.checkstyle.version>8.20</puppycrawl.checkstyle.version>
 		<m2e.lifecycle-mapping.version>1.0.0</m2e.lifecycle-mapping.version>
+                <hardwareProfile></hardwareProfile>
 	</properties>
 
 	<dependencies>
@@ -281,6 +282,9 @@
 						<forkCount>3</forkCount>
 						<reuseForks>true</reuseForks>
 						<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+                                                <properties>
+                                                    <hardwareProfile>${hardwareProfile}</hardwareProfile>
+                                                </properties>
 					</configuration>
 				</plugin>
 				<!-- Build Plugins -->
